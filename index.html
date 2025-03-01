@@ -26,7 +26,7 @@
 </style>
 
   </head>
-  <body class="mx-auto w-[90%] poppins text-black">
+  <body class="mx-auto w-[85%] poppins text-black">
     <header>
       <nav>
         <div
@@ -44,7 +44,7 @@
               class="flex items-center gap-2 border-[1px] p-3 rounded-lg bg-gray-200"
             >
               <img src="assets/checkbox.png" alt="" />
-              <p class="text-xl text-black">23</p>
+              <p id="plus" class="text-xl text-black font-bold">23</p>
             </div>
             <div>
               <img class="cursor-pointer" src="assets/theme-btn.png" alt="" />
@@ -55,7 +55,7 @@
     </header>
 
     <main class="mt-5 grid grid-cols-4 gap-5">
-      <section class="bg-white rounded-xl  pt-5 col-span-3 ">
+      <section class="bg-white rounded-xl   col-span-3 ">
         <section class="grid grid-cols-4 p-5 gap-5">
           <div class="col-span-1 bg-[#F4F7FF] rounded-xl flex justify-center items-center gap-5">
             <div>
@@ -63,13 +63,13 @@
             </div>
             <div class="flex flex-col ">
               <h1 class="text-[16px]">Task Assigned</h1>
-              <p class="text-[25px] font-bold">06</p>
+              <p id="minus" class="text-xl font-bold">6</p>
             </div>
             
 
           </div>
-          <div class="col-span-2 bg-linear-to-l from-purple-500 to-pink-5000">
-            <div class="flex gap-3 justify-start pl-20 py-5 items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl ">
+          <div id="main-next" class="col-span-2 bg-linear-to-l from-purple-500 to-pink-5000 cursor-pointer ">
+            <div class="flex gap-3 justify-start pl-20 py-3 items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl ">
               <img class="w-[65px] h-[70px]" src="assets/board.png" alt="">
             <p class="text-white">Discover Something <br> New Today!</p>
             </div>
@@ -87,109 +87,104 @@
 
 
         </section>
-
         <section>
           <div class="grid grid-cols-3 m-5 text-black gap-9">
+
+            <!-- fix buttton -->
             <div class="w-[100%] flex flex-col gap-3  p-5 bg-[#F4F7FF] rounded-lg ">
               <p class="p-2 bg-[#FFFFFF] w-[40%] text-center rounded-lg">ShopEase</p>
-              <h1 class="text-[150%] font-bold">Fix Mobile Button Issue</h1>
-              <p class="p-5 bg-[#FFFFFF] rounded-xl text-[16px]">
+              <h1 class="text-[150%] font-medium">Fix Mobile Button Issue</h1>
+              <p class="p-5 bg-[#FFFFFF] rounded-xl text-[16px] truncate ">
                 Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                 and ensure onClick works properly
               </p>
               <div class="flex flex-row justify-between items-center">
                 <div>
                     <p class="text-[14px]">Deadline</p>
-                <p class="text-[16px] font-bold">21 March 2025</p>
+                <p class="text-[16px] font-[500]">21 March 2025</p>
                 </div>
-                <button class="btn bg-[#3752FD] text-white border-none">Completed</button>
+                <button id="fix-btn"  class="btn bg-[#3752FD] text-white border-none">Completed</button>
               </div>
             </div>
 
             <div class="w-[100%] flex flex-col gap-3  p-5 bg-[#F4F7FF] rounded-lg ">
                 <p class="p-2 bg-[#FFFFFF] w-[40%] text-center rounded-lg">CloudSync</p>
-                <h1 class="text-[150%] font-bold">Add Dark Mode</h1>
-                <p class="p-5 bg-[#FFFFFF] rounded-xl text-[16px]">
+                <h1 class="text-[150%] font-medium">Add Dark Mode</h1>
+                <p class="p-5 bg-[#FFFFFF] rounded-xl text-[16px] truncate  ">
                   Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
                 </p>
                 <div class="flex flex-row justify-between items-center">
                   <div>
                       <p class="text-[14px]">Deadline</p>
-                  <p class="text-[16px] font-bold">21 March 2025</p>
+                  <p class="text-[16px] font-[500]">21 March 2025</p>
                   </div>
-                  <button class="btn bg-[#3752FD] text-white border-none">Completed</button>
+                  <button id="add-btn" class="btn bg-[#3752FD] text-white border-none">Completed</button>
                 </div>
               </div>
 
               <div class="w-[100%] flex flex-col gap-3  p-5 bg-[#F4F7FF] rounded-lg ">
                 <p class="p-2 bg-[#FFFFFF] w-[40%] text-center rounded-lg">SwiftPay</p>
-                <h1 class="text-[150%] font-bold">Optimize  Home page </h1>
-                <p class="p-5 bg-[#FFFFFF] rounded-xl text-[16px]">
+                <h1 class="text-[150%] font-medium">Optimize  Home page </h1>
+                <p class="p-5 bg-[#FFFFFF] rounded-xl text-[16px] truncate">
                   Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                   and ensure onClick works properly
                 </p>
                 <div class="flex flex-row justify-between items-center">
                   <div>
                       <p class="text-[14px]">Deadline</p>
-                  <p class="text-[16px] font-bold">21 March 2025</p>
+                  <p class="text-[16px] font-[500]">21 March 2025</p>
                   </div>
-                  <button class="btn bg-[#3752FD] text-white border-none">Completed</button>
+                  <button id="opt-btn" class="btn bg-[#3752FD] text-white border-none">Completed</button>
                 </div>
               </div>
 
               <div class="w-[100%] flex flex-col gap-3  p-5 bg-[#F4F7FF] rounded-lg ">
                 <p class="p-2 bg-[#FFFFFF] w-[40%] text-center rounded-lg">Meta</p>
-                <h1 class="text-[150%] font-bold">Add new emoji 🤲</h1>
-                <p class="p-5 bg-[#FFFFFF] rounded-xl text-[16px]">
+                <h1 class="text-[150%] font-medium">Add new emoji 🤲</h1>
+                <p class="p-5 bg-[#FFFFFF] rounded-xl text-[16px] truncate">
                   Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                   and ensure onClick works properly
                 </p>
                 <div class="flex flex-row justify-between items-center">
                   <div>
                       <p class="text-[14px]">Deadline</p>
-                  <p class="text-[16px] font-bold">21 March 2025</p>
+                  <p class="text-[16px] font-[500]">21 March 2025</p>
                   </div>
-                  <button class="btn bg-[#3752FD] text-white border-none">Completed</button>
+                  <button id="emo-btn" class="btn bg-[#3752FD] text-white border-none">Completed</button>
                 </div>
               </div>
 
               <div class="w-[100%] flex flex-col gap-3  p-5 bg-[#F4F7FF] rounded-lg ">
                 <p class="p-2 bg-[#FFFFFF] w-[40%] text-center rounded-lg">Google LLC</p>
-                <h1 class="text-[150%] font-bold">Integrate OpenAI API </h1>
-                <p class="p-5 bg-[#FFFFFF] rounded-xl text-[16px]">
+                <h1 class="text-[150%] font-medium">Integrate OpenAI API </h1>
+                <p class="p-5 bg-[#FFFFFF] rounded-xl text-[16px] truncate">
                   Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                   and ensure onClick works properly
                 </p>
                 <div class="flex flex-row justify-between items-center">
                   <div>
                       <p class="text-[14px]">Deadline</p>
-                  <p class="text-[16px] font-bold">21 March 2025</p>
+                  <p class="text-[16px] font-[500]">21 March 2025</p>
                   </div>
-                  <button class="btn bg-[#3752FD] text-white border-none">Completed</button>
+                  <button id="int-btn" class="btn bg-[#3752FD] text-white border-none">Completed</button>
                 </div>
               </div>
 
               <div class="w-[100%] flex flex-col gap-3  p-5 bg-[#F4F7FF] rounded-lg ">
                 <p class="p-2 bg-[#FFFFFF] w-[40%] text-center rounded-lg">Glassdoar</p>
-                <h1 class="text-[150%] font-bold">Improve Job searching </h1>
-                <p class="p-5 bg-[#FFFFFF] rounded-xl text-[16px]">
+                <h1 class="text-[150%] font-medium">Improve Job searching </h1>
+                <p class="p-5 bg-[#FFFFFF] rounded-xl text-[16px] truncate">
                   Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                   and ensure onClick works properly
                 </p>
                 <div class="flex flex-row justify-between items-center">
                   <div>
                       <p class="text-[14px]">Deadline</p>
-                  <p class="text-[16px] font-bold">21 March 2025</p>
+                  <p class="text-[16px] font-[500]">21 March 2025</p>
                   </div>
-                  <button class="btn bg-[#3752FD] text-white border-none">Completed</button>
+                  <button id="impr-btn" class="btn bg-[#3752FD] text-white border-none">Completed</button>
                 </div>
               </div>
-
-
-
-
-
-
           </div>
         </section>
       </section>
@@ -200,8 +195,14 @@
                 <img class="w-[30px]" src="assets/activity.png" alt="">
                 <h1 class="text-[20px]">Activity Log</h1>
             </div>
-            <button class="btn bg-[#3752FD] text-white border-none ">Clear History</button>
-            <p class="text-center p-3 bg-[#F4F7FF] rounded-xl">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            <button id="clr-btn" class="btn bg-[#3752FD] text-white border-none ">Clear History</button>
+
+            <p id="act-p1" class="text-center p-3 bg-[#F4F7FF] rounded-xl">You have Complete The Task Fix Mobile Button Issue at 12:48:15 PM</p>
+            <p id="act-p2" class="text-center p-3 bg-[#F4F7FF] rounded-xl">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            <p id="act-p3" class="text-center p-3 bg-[#F4F7FF] rounded-xl">You have Complete The Task Optimize Home page at 12:48:15 PM</p>
+            <p id="act-p4" class="text-center p-3 bg-[#F4F7FF] rounded-xl">You have Complete The Task Add new emoji 🤲 at 12:48:15 PM</p>
+            <p id="act-p5" class="text-center p-3 bg-[#F4F7FF] rounded-xl">You have Complete The Task Integrate OpenAI API at 12:48:15 PM</p>
+            <p id="act-p6" class="text-center p-3 bg-[#F4F7FF] rounded-xl">You have Complete The Task Improve Job searching at 12:48:15 PM</p>
 
         
 
@@ -209,35 +210,13 @@
 
       </section>
 
-      <!-- <section class="bg-white h-screen rounded-xl mt-5 grid grid-cols-4">
-            <section class="col-span-3">
-                <div>
-                    <h1>bhdgfyfgy</h1>
+     </main>
 
-                </div>
-                <div>
-                    <p>
-                        dgdsygf
-                    </p>
+    <footer>
 
-                </div>
-
-            </section>
-           <section class="col-span-1">
-            <div class="flex">
-                <img src="assets/activity.png" alt="">
-                <h1>Activity Log</h1>
-            </div>
-            <div>
-                <button class="btn">Clear History</button>
-            </div>
-
-           </section>
-        </section>  -->
-    </main>
-
-    <footer></footer>
-
+    </footer>
+    <script src="java/main.js"></script>
+<script src="java/button.js"></script>
     <script src="java/date.js"></script>
   </body>
 </html>

@@ -5,6 +5,6 @@
             document.getElementById("date").innerText = now.toLocaleDateString("en-US", options);
         }
 
-        updateDate(); // Initial call
-        setInterval(updateDate, 1000); // Update every second
+        updateDate();
+        setInterval(updateDate, 1000);
     
