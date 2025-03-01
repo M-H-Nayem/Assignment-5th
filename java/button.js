@@ -106,6 +106,7 @@ document.getElementById("plus").innerText= finalNum2;
 this.disabled = true;
 document.getElementById("act-p6").style.display="block";
 alert("Board updated Successfully");
+alert("Congrats!!! you have completed all the task ");
 })
 
 
