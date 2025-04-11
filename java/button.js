@@ -38,6 +38,9 @@ let num2 =document.getElementById("plus").innerText
 let convertedNum2 = parseInt(num2)
 let finalNum2 = convertedNum2 + 1;
 document.getElementById("plus").innerText= finalNum2;
+
+// this.disabled = true;  Button disable hoye jabe
+
 this.disabled = true;
 document.getElementById("act-p2").style.display="block";
 alert("Board updated Successfully");
